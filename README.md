@@ -40,7 +40,7 @@ def is_subscriber_authorized(email, subscribers):
     """
     Update the membership_level_id to match the required plan for your new app.
     """
-    target_membership_id = 187451  # Update this ID as needed for different plans
+    target_membership_id = 12345  # Update this ID as needed for different plans
     for subscriber in subscribers:
         if ('payer_email' in subscriber and 'membership_level_id' in subscriber and
             subscriber['payer_email'] == email and subscriber['membership_level_id'] == target_membership_id):
